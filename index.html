@@ -526,14 +526,15 @@
                  <div class="form-header">
                      Mensaje
                  </div>
-                 <form id="myForm" action="#">
+
+                 <form id="myForm" action="envia.php" method="post">
                     <div class="input-line">
-                        <input  id="name" type="text" placeholder="Nombre" class="input-name">
-                        <input id="email" type="email" placeholder="Correo Electronico"  class="input-name">
+                        <input  id="name" type="text" name="nombre" placeholder="Nombre" class="input-name">
+                        <input id="email" type="email" name="Correo" placeholder="Correo Electronico"  class="input-name">
                     </div>
-                    <input type="text" id="subject" placeholder="Asunto" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="Mensaje"></textarea>
-                    <button type="button" id ="submit" value="send">Enviar</button>
+                    <input type="text" id="subject" name="telefono" placeholder="Asunto" class="input-subject">
+                    <textarea id ="body" class="input-textarea" name="mensaje" placeholder="Mensaje"></textarea>
+                    <button type="submit" id ="for-submit" value="send">Enviar</button>
                  </form>
                
              </div>
